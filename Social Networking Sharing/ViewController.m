@@ -44,7 +44,7 @@
         SLComposeViewController *tweetSheet = [SLComposeViewController
                                                composeViewControllerForServiceType:SLServiceTypeTwitter];
         
-        [tweetSheet setInitialText:@"Great fun to learn iOS programming at appcoda.com!"];
+        [tweetSheet setInitialText:@"Great fun to learn iOS programming with examples!"];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
 }
@@ -54,7 +54,10 @@
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
         SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
+        [controller addURL:[NSURL URLWithString:@"http://www.apple.com/"]];
+        [controller addImage:[UIImage imageNamed:@"socialsharing-facebook-image.jpg"]];
         [controller setInitialText:@"First post from my iPhone app"];
+        
         [self presentViewController:controller animated:YES completion:nil];
     }
 }

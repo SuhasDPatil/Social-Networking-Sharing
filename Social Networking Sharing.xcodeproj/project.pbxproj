@@ -22,6 +22,7 @@
 		7786E020194ECF9400E97981 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7786E01E194ECF9400E97981 /* InfoPlist.strings */; };
 		7786E022194ECF9400E97981 /* Social_Networking_SharingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786E021194ECF9400E97981 /* Social_Networking_SharingTests.m */; };
 		7786E02D194ED84E00E97981 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7786E02B194ED72600E97981 /* Social.framework */; };
+		7786E02F194EE0B900E97981 /* socialsharing-facebook-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7786E02E194EE0B900E97981 /* socialsharing-facebook-image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7786E01F194ECF9400E97981 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7786E021194ECF9400E97981 /* Social_Networking_SharingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Social_Networking_SharingTests.m; sourceTree = "<group>"; };
 		7786E02B194ED72600E97981 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7786E02E194EE0B900E97981 /* socialsharing-facebook-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "socialsharing-facebook-image.jpg"; path = "Images/socialsharing-facebook-image.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		7786DFFD194ECF9400E97981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7786E02E194EE0B900E97981 /* socialsharing-facebook-image.jpg */,
 				7786DFFE194ECF9400E97981 /* Social Networking Sharing-Info.plist */,
 				7786DFFF194ECF9400E97981 /* InfoPlist.strings */,
 				7786E002194ECF9400E97981 /* main.m */,
@@ -233,6 +236,7 @@
 			files = (
 				7786E00F194ECF9400E97981 /* Images.xcassets in Resources */,
 				7786E001194ECF9400E97981 /* InfoPlist.strings in Resources */,
+				7786E02F194EE0B900E97981 /* socialsharing-facebook-image.jpg in Resources */,
 				7786E00A194ECF9400E97981 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +463,7 @@
 				7786E027194ECF9400E97981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7786E028194ECF9400E97981 /* Build configuration list for PBXNativeTarget "Social Networking SharingTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +472,7 @@
 				7786E02A194ECF9400E97981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
