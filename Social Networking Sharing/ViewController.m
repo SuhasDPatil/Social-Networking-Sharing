@@ -39,7 +39,6 @@
 
 - (IBAction)postToTwitter:(id)sender {
 
-    }
 }
 
 - (IBAction)postToFacebook:(id)sender {
