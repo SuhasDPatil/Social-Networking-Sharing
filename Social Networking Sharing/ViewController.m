@@ -37,10 +37,25 @@
 }
 
 
-- (IBAction)postToTwitter:(id)sender {
-
+- (IBAction)postToTwitter:(id)sender
+{
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
+    {
+        SLComposeViewController *tweetSheet = [SLComposeViewController
+                                               composeViewControllerForServiceType:SLServiceTypeTwitter];
+        
+        [tweetSheet setInitialText:@"Great fun to learn iOS programming at appcoda.com!"];
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+    }
 }
 
-- (IBAction)postToFacebook:(id)sender {
+- (IBAction)postToFacebook:(id)sender
+{
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [controller setInitialText:@"First post from my iPhone app"];
+        [self presentViewController:controller animated:YES completion:nil];
+    }
 }
 @end
